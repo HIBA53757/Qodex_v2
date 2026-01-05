@@ -6,6 +6,7 @@
 
 class Security {
     
+    
     // Génère un token CSRF
      
     public static function generateCSRFToken() {
@@ -73,7 +74,7 @@ class Security {
      
     public static function requireLogin() {
         if (!self::isLoggedIn()) {
-            header('Location: ../auth/login.php');
+            header('Location: http://localhost/Qodex_v2/pages/auth/login.php');
             exit();
         }
     }
@@ -99,7 +100,7 @@ class Security {
     public static function requireStudent() {
         self::requireLogin();
         if (!self::isStudent()) {
-            header('Location: ../student/dashboard.php');
+            header('Location: ../student/pages/dashboard.php');
             exit();
         }
     }

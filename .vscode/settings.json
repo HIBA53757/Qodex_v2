@@ -3,9 +3,9 @@
         {
             "mysqlOptions": {
                 "authProtocol": "default",
-                "enableSsl": "Disabled"
+                "enableSsl": false
             },
-            "ssh": "Disabled",
+            "ssh": false,
             "previewLimit": 50,
             "server": "localhost",
             "port": 3306,

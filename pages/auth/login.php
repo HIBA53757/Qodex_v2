@@ -13,7 +13,7 @@ if (Security::isLoggedIn()) {
     if ($_SESSION['user_role'] === 'enseignant') {
         header('Location: ../teacher/dashboard.php');
     } else {
-        header('Location: ../student/dashboard.php');
+        header('Location: ../student/pages/dashboard.php');
     }
     exit();
 }
